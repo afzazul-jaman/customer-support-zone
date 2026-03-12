@@ -12,7 +12,7 @@ function Footer(){
           <div style={{maxWidth:"260px"}}>
             <h3 style={{color:"#fff"}}>CS — Ticket System</h3>
             <p style={{fontSize:"13px", lineHeight:"1.6"}}>
-             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+             A modern customer support platform to track, manage, and resolve tickets efficiently. Built for teams who care about fast response and customer satisfaction.
             </p>
           </div>
           <div>
@@ -36,29 +36,30 @@ function Footer(){
           <div>
            <h4 style={{color:"#fff"}}>Social Links</h4>
 
-<a href="#" style={{ display:"flex", alignItems:"center", gap:"10px", marginBottom:"12px", textDecoration:"none", color:"#ccc" }}>
-  <span style={{ width:"20px", height:"20px", borderRadius:"50%", backgroundColor:"#fff", display:"flex", alignItems:"center", justifyContent:"center" }}>
+
+<a href="https://twitter.com/cs_ticketsystem" style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "12px", textDecoration: "none", color: "#ccc" }}>
+  <span style={{ width: "20px", height: "20px", borderRadius: "50%", backgroundColor: "#fff", display: "flex", alignItems: "center", justifyContent: "center" }}>
     <Twitter size={16} color="#000" />
   </span>
-  @CS — Ticket System
+  @cs_ticketsystem
 </a>
 
-<a href="#" style={{ display:"flex", alignItems:"center", gap:"10px", marginBottom:"12px", textDecoration:"none", color:"#ccc" }}>
-  <span style={{ width:"20px", height:"20px", borderRadius:"50%", backgroundColor:"#fff", display:"flex", alignItems:"center", justifyContent:"center" }}>
+<a href="https://linkedin.com/company/cs-ticket-system" style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "12px", textDecoration: "none", color: "#ccc" }}>
+  <span style={{ width: "20px", height: "20px", borderRadius: "50%", backgroundColor: "#fff", display: "flex", alignItems: "center", justifyContent: "center" }}>
     <Linkedin size={16} color="#000" />
   </span>
-  @CS — Ticket System
+  /cs-ticket-system
 </a>
 
-<a href="#" style={{ display:"flex", alignItems:"center", gap:"10px", marginBottom:"12px", textDecoration:"none", color:"#ccc" }}>
-  <span style={{ width:"20px", height:"20px", borderRadius:"50%", backgroundColor:"#fff", display:"flex", alignItems:"center", justifyContent:"center" }}>
+<a href="https://facebook.com/csTicketSystem" style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "12px", textDecoration: "none", color: "#ccc" }}>
+  <span style={{ width: "20px", height: "20px", borderRadius: "50%", backgroundColor: "#fff", display: "flex", alignItems: "center", justifyContent: "center" }}>
     <Facebook size={16} color="#000" />
   </span>
-  @CS — Ticket System
+  /csTicketSystem
 </a>
 
-<a href="mailto:support@cst.com" style={{ display:"flex", alignItems:"center", gap:"10px", textDecoration:"none", color:"#ccc" }}>
-  <span style={{ width:"20px", height:"20px", borderRadius:"50%", backgroundColor:"#fff", display:"flex", alignItems:"center", justifyContent:"center" }}>
+<a href="mailto:support@cst.com" style={{ display: "flex", alignItems: "center", gap: "10px", textDecoration: "none", color: "#ccc" }}>
+  <span style={{ width: "20px", height: "20px", borderRadius: "50%", backgroundColor: "#fff", display: "flex", alignItems: "center", justifyContent: "center" }}>
     <Mail size={16} color="#000" />
   </span>
   support@cst.com
