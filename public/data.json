@@ -27,15 +27,6 @@
     "description": "FaceID recognition failing on the mobile app after the latest 2026 system update. Manual login also freezing."
   },
   {
-    "ticket_id": "#1004",
-    "priority": "MEDIUM",
-    "status": "Pending",
-    "title": "Account Locked - Multiple Attempts",
-    "customer_name": "Anika Rahman",
-    "date": "2026-01-22",
-    "description": "Account automatically locked due to 5 consecutive failed login attempts. User claims they are using the correct credentials."
-  },
-  {
     "ticket_id": "#1005",
     "priority": "HIGH PRIORITY",
     "status": "Open",
@@ -43,15 +34,6 @@
     "customer_name": "David Miller",
     "date": "2026-01-25",
     "description": "Corporate Single Sign-On (SSO) redirect loop detected. User is unable to bypass the landing page."
-  },
-  {
-    "ticket_id": "#1006",
-    "priority": "LOW",
-    "status": "Resolved",
-    "title": "Forgot Username Recovery",
-    "customer_name": "Elena Gilbert",
-    "date": "2026-01-28",
-    "description": "Customer forgot their unique username. Successfully recovered via secondary email verification."
   },
   {
     "ticket_id": "#1007",
@@ -79,15 +61,6 @@
     "customer_name": "Linda Zhao",
     "date": "2026-02-08",
     "description": "User can log in, but the dashboard shows 'No Data Found' due to a database sync error after authentication."
-  },
-  {
-    "ticket_id": "#1010",
-    "priority": "LOW",
-    "status": "Closed",
-    "title": "Browser Compatibility Issue",
-    "customer_name": "Kevin Hart",
-    "date": "2026-02-12",
-    "description": "Login button unresponsive on older versions of Safari. Advised user to update browser."
   },
   {
     "ticket_id": "#1011",

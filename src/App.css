@@ -229,6 +229,24 @@ footer a:hover{
   height: auto !important;
 }
 
+.badge{
+  padding:4px 8px;
+  border-radius:6px;
+  font-size:12px;
+  font-weight:500;
+}
+
+/* green */
+.badge-open{
+  color:#28a745;
+  background:#e9f7ef;
+}
+
+/* light yellow */
+.badge-inprogress{
+  color:#f0ad4e;
+  background:#fff4e5;
+}
 /* ========================= FOOTER ========================= */
 footer{
   background: #000;
