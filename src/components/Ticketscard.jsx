@@ -1,6 +1,9 @@
+import { use } from 'react'
 import '../App.css'
 
-function Ticketscard() {
+function Ticketscard({userPromise}) {
+  const userPromiseData = use(userPromise)
+  console.log(userPromiseData.customer_name);
   return (
     <div className="ticket-layout">
 

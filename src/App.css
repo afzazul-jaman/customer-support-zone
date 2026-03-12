@@ -84,6 +84,7 @@ footer a:hover{
    gap: 20px;
    padding: 0 20px;
    box-sizing: border-box;
+ 
 }
 
 .card{
@@ -155,6 +156,8 @@ footer a:hover{
   gap: 40px;
   padding: 40px 50px;
   align-items: flex-start;
+  width: 78%;
+  margin: auto;
 }
 
 .ticket-left{
