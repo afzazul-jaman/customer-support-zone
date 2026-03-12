@@ -1,98 +1,110 @@
 [
   {
+    "ticket_id": "#1001",
+    "priority": "HIGH PRIORITY",
+    "status": "Open",
+    "title": "Login Issues - Can't Access Account",
+    "customer_name": "John Smith",
+    "date": "2026-01-15",
+    "description": "Customer is unable to log in to their account. They've tried resetting their password multiple times but still haven't received the recovery email."
+  },
+  {
     "ticket_id": "#1002",
-    "customer_name": "Sarah Jenkins",
-    "date": "2026-02-10",
     "priority": "CRITICAL",
     "status": "Open",
-    "issue_description": "2FA code not received via SMS or Email; user completely locked out."
+    "title": "2FA Authentication Failure",
+    "customer_name": "Sarah Jenkins",
+    "date": "2026-01-18",
+    "description": "User is not receiving the 6-digit TOTP code on their registered mobile number for two-factor authentication."
   },
   {
     "ticket_id": "#1003",
+    "priority": "HIGH PRIORITY",
+    "status": "In Progress",
+    "title": "Biometric Sync Error",
     "customer_name": "Michael Ross",
-    "date": "2026-02-12",
-    "priority": "HIGH",
-    "status": "Pending",
-    "issue_description": "Password reset link expires instantly after clicking (Token mismatch)."
+    "date": "2026-01-20",
+    "description": "FaceID recognition failing on the mobile app after the latest 2026 system update. Manual login also freezing."
   },
   {
     "ticket_id": "#1004",
+    "priority": "MEDIUM",
+    "status": "Pending",
+    "title": "Account Locked - Multiple Attempts",
     "customer_name": "Anika Rahman",
-    "date": "2026-02-15",
-    "priority": "Medium",
-    "status": "Resolved",
-    "issue_description": "Account locked after 3 failed biometric/FaceID attempts."
+    "date": "2026-01-22",
+    "description": "Account automatically locked due to 5 consecutive failed login attempts. User claims they are using the correct credentials."
   },
   {
     "ticket_id": "#1005",
-    "customer_name": "David Miller",
-    "date": "2026-02-18",
-    "priority": "HIGH",
+    "priority": "HIGH PRIORITY",
     "status": "Open",
-    "issue_description": "System showing 'User not found' error despite active subscription status."
+    "title": "SSO Integration Error",
+    "customer_name": "David Miller",
+    "date": "2026-01-25",
+    "description": "Corporate Single Sign-On (SSO) redirect loop detected. User is unable to bypass the landing page."
   },
   {
     "ticket_id": "#1006",
+    "priority": "LOW",
+    "status": "Resolved",
+    "title": "Forgot Username Recovery",
     "customer_name": "Elena Gilbert",
-    "date": "2026-02-22",
-    "priority": "Low",
-    "status": "Closed",
-    "issue_description": "User requested clarification on new session timeout policy (2026 Update)."
+    "date": "2026-01-28",
+    "description": "Customer forgot their unique username. Successfully recovered via secondary email verification."
   },
   {
     "ticket_id": "#1007",
-    "customer_name": "Robert Vance",
-    "date": "2026-02-25",
     "priority": "CRITICAL",
-    "status": "In Progress",
-    "issue_description": "Potential account takeover; unauthorized login detected from unrecognized IP."
+    "status": "Open",
+    "title": "Session Hijacking Suspected",
+    "customer_name": "Robert Vance",
+    "date": "2026-02-01",
+    "description": "Unauthorized login attempt detected from an unknown IP in a different country. Account restricted for safety."
   },
   {
     "ticket_id": "#1008",
-    "customer_name": "Tanvir Ahmed",
-    "date": "2026-03-01",
-    "priority": "Medium",
+    "priority": "MEDIUM",
     "status": "Open",
-    "issue_description": "Social login (Google/Apple ID) stuck on a blank white screen during auth."
+    "title": "Social Login - API Timeout",
+    "customer_name": "Tanvir Ahmed",
+    "date": "2026-02-05",
+    "description": "Login with Google/Apple ID is timing out. Error code: 504 Gateway Timeout during authentication."
   },
   {
     "ticket_id": "#1009",
+    "priority": "HIGH PRIORITY",
+    "status": "In Progress",
+    "title": "Database Sync Post-Login",
     "customer_name": "Linda Zhao",
-    "date": "2026-03-03",
-    "priority": "HIGH",
-    "status": "Pending",
-    "issue_description": "Database sync error; user dashboard fails to load post-login."
+    "date": "2026-02-08",
+    "description": "User can log in, but the dashboard shows 'No Data Found' due to a database sync error after authentication."
   },
   {
     "ticket_id": "#1010",
+    "priority": "LOW",
+    "status": "Closed",
+    "title": "Browser Compatibility Issue",
     "customer_name": "Kevin Hart",
-    "date": "2026-03-05",
-    "priority": "Low",
-    "status": "Resolved",
-    "issue_description": "Username recovery requested via secondary email verification."
+    "date": "2026-02-12",
+    "description": "Login button unresponsive on older versions of Safari. Advised user to update browser."
   },
   {
     "ticket_id": "#1011",
-    "customer_name": "Sophia Loren",
-    "date": "2026-03-08",
-    "priority": "HIGH",
+    "priority": "HIGH PRIORITY",
     "status": "Open",
-    "issue_description": "Mobile app crashes immediately after entering valid login credentials."
+    "title": "Expired Security Token",
+    "customer_name": "Sophia Loren",
+    "date": "2026-02-15",
+    "description": "User is getting 'Token Expired' error immediately after a successful login. Forced logout occurring repeatedly."
   },
   {
     "ticket_id": "#1012",
-    "customer_name": "James Bond",
-    "date": "2026-03-10",
-    "priority": "Medium",
-    "status": "In Progress",
-    "issue_description": "VPN/Proxy users being incorrectly flagged and blocked by the login firewall."
-  },
-  {
-    "ticket_id": "#1013",
-    "customer_name": "Maria Garcia",
-    "date": "2026-03-12",
-    "priority": "CRITICAL",
+    "priority": "MEDIUM",
     "status": "Open",
-    "issue_description": "Corporate SSO integration (Okta) failing for the entire department."
+    "title": "Captcha Loop Issue",
+    "customer_name": "James Bond",
+    "date": "2026-02-18",
+    "description": "User is stuck in an infinite Captcha loop during the login process, even after providing correct answers."
   }
 ]
