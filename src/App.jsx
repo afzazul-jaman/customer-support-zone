@@ -1,4 +1,4 @@
- import './App.css'
+import './App.css'
 
 function App() {
     console.log("hello world");
@@ -11,13 +11,12 @@ function App() {
           </div>
           <div className='nav-content'>
              <ul>
-                <li>Home</li>
-                <li>FAQ</li>
-                <li>Changelog</li>
-                <li>Blog</li>
-                <li>Download</li>
-                <li>Contact</li>
-                
+                <li><a href="#">Home</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Changelog</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Download</a></li>
+                <li><a href="#">Contact</a></li>
              </ul>
              <button>+ New Ticket</button>
           </div>
@@ -36,7 +35,7 @@ function App() {
           </div>
       </div>
 
-   <div style={{ display: "flex", gap: "30px", marginLeft: "50px" , justifyContent:"space-around" , alignItems:"center"}}>
+   <div className="ticket-layout"  style={{ display: "flex", gap: "30px", marginLeft: "50px" , justifyContent:"space-around" , alignItems:"center"}}>
   {/* LEFT SIDE */}
   <div>
     <h5 style={{ fontSize: "24px", marginLeft: "70px", marginTop: "80px" }}>
@@ -262,34 +261,34 @@ function App() {
     {/* Column 2 */}
     <div>
       <h4 style={{color:"#fff"}}>Company</h4>
-      <p>About Us</p>
-      <p>Our Mission</p>
-      <p>Contact Sales</p>
+      <p><a href="#">About Us</a></p>
+      <p><a href="#">Our Mission</a></p>
+      <p><a href="#">Contact Sales</a></p>
     </div>
 
     {/* Column 3 */}
     <div>
       <h4 style={{color:"#fff"}}>Services</h4>
-      <p>Products & Services</p>
-      <p>Customer Stories</p>
-      <p>Download Apps</p>
+      <p><a href="#">Products & Services</a></p>
+      <p><a href="#">Customer Stories</a></p>
+      <p><a href="#">Download Apps</a></p>
     </div>
 
     {/* Column 4 */}
     <div>
       <h4 style={{color:"#fff"}}>Information</h4>
-      <p>Privacy Policy</p>
-      <p>Terms & Conditions</p>
-      <p>Join Us</p>
+      <p><a href="#">Privacy Policy</a></p>
+      <p><a href="#">Terms & Conditions</a></p>
+      <p><a href="#">Join Us</a></p>
     </div>
 
     {/* Column 5 */}
     <div>
       <h4 style={{color:"#fff"}}>Social Links</h4>
-      <p>🌐 @CS — Ticket System</p>
-      <p>📘 @CS — Ticket System</p>
-      <p>📸 @CS — Ticket System</p>
-      <p>✉ support@cst.com</p>
+      <p><a href="#">🌐 @CS — Ticket System</a></p>
+      <p><a href="#">📘 @CS — Ticket System</a></p>
+      <p><a href="#">📸 @CS — Ticket System</a></p>
+      <p><a href="mailto:support@cst.com">✉ support@cst.com</a></p>
     </div>
 
   </div>

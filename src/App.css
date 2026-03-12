@@ -3,6 +3,7 @@ body{
   padding:0;
   background-color: aliceblue;
 }
+
 button{
    background: linear-gradient(135deg,#632EE3,#9F62F2);
    width: 145px;
@@ -12,6 +13,8 @@ button{
    color: white;
    cursor: pointer;
 }
+
+/* ========================= NAV ========================= */
 .nav-container{
    display:flex;
    justify-content:space-between;
@@ -34,15 +37,42 @@ button{
    margin:0;
    padding:0;
 }
+
+.nav-content ul li a{
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+
+.nav-content ul li a:hover{
+  color: #632EE3;
+}
+
+footer a{
+  text-decoration: none;
+  color: #ccc;
+  transition: color 0.2s;
+}
+
+footer a:hover{
+  color: #fff;
+}
+
+/* ========================= CARDS ========================= */
 .card-container{
    display: flex;
    justify-content: center;
    align-items: center;
    margin-top: 50px;
    gap: 20px;
+   padding: 0 20px;
+   box-sizing: border-box;
 }
+
 .card{
-  width: 708px;
+  width: 100%;
+  max-width: 708px;
   height: 250px;
   padding: 40px;
   border-radius: 10px;
@@ -50,25 +80,24 @@ button{
   overflow: hidden;
   text-align: center;
   color: white;
-
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  box-sizing: border-box;
 }
+
 .in-progress{
   background:
   url("./assets/bg-vector.png"),
   linear-gradient(135deg,#632EE3,#9F62F2);
 }
 
-/* Resolved Color */
 .Resolved{
   background:
   url("./assets/bg-vector.png"),
   linear-gradient(135deg,#54CF68,#00827A);
 }
 
-/* LEFT VECTOR */
 .card::before{
   content: "";
   position: absolute;
@@ -81,7 +110,6 @@ button{
   opacity: 0.3;
 }
 
-/* RIGHT VECTOR (flipped) */
 .card::after{
   content: "";
   position: absolute;
@@ -91,10 +119,10 @@ button{
   height: 100%;
   background: url("./assets/vector1.png") no-repeat right center;
   background-size: contain;
-  transform: scaleX(-1);   /* vector flip করবে */
+  transform: scaleX(-1);
   opacity: 0.3;
 }
-/* text always top */
+
 .card h4,
 .card p{
   position: relative;
@@ -104,4 +132,233 @@ button{
 .card p{
   font-size: 48px;
 }
- 
+
+/* ========================= TICKET LAYOUT ========================= */
+.ticket-layout{
+  display: flex;
+  gap: 30px;
+  margin-left: 50px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* ========================= FOOTER ========================= */
+footer{
+  background: #000;
+  color: #ccc;
+  padding: 60px 80px;
+  margin-top: 80px;
+}
+
+footer > div:first-child{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+footer > div:first-child > div{
+  flex: 1 1 140px;
+  min-width: 120px;
+}
+
+/* ========================= LARGE LAPTOP / DESKTOP ========================= */
+@media (max-width: 1400px){
+  .card{
+    width: 600px;
+  }
+}
+
+/* ========================= TABLET LANDSCAPE ========================= */
+@media (max-width: 1024px){
+  .nav-container{
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-content{
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-content ul{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card-container{
+    flex-direction: column;
+  }
+
+  .card{
+    width: 90%;
+    max-width: 90%;
+  }
+
+  .ticket-layout{
+    flex-direction: column;
+    margin-left: 0 !important;
+    padding: 0 30px;
+    align-items: stretch;
+    box-sizing: border-box;
+  }
+
+  .ticket-layout > div:first-child h5{
+    margin-left: 0 !important;
+    margin-top: 40px !important;
+  }
+
+  .ticket-layout > div:first-child > div{
+    width: 100% !important;
+    margin-left: 0 !important;
+    box-sizing: border-box;
+  }
+
+  .ticket-layout > div:last-child{
+    margin-top: 20px !important;
+    width: 100%;
+  }
+
+  .ticket-layout > div:last-child > div{
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+}
+
+/* ========================= SMALL TABLET ========================= */
+@media (max-width: 768px){
+  .card-container{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card{
+    width: 95%;
+    max-width: 95%;
+    height: auto;
+    padding: 30px 20px;
+  }
+
+  .card h4{
+    font-size: 20px !important;
+  }
+
+  .card p{
+    font-size: 40px !important;
+  }
+
+  .ticket-layout{
+    flex-direction: column;
+    margin-left: 0 !important;
+    padding: 0 20px;
+    align-items: stretch;
+    box-sizing: border-box;
+  }
+
+  .ticket-layout > div:first-child h5{
+    margin-left: 0 !important;
+    margin-top: 40px !important;
+    font-size: 20px !important;
+  }
+
+  .ticket-layout > div:first-child > div{
+    width: 100% !important;
+    margin-left: 0 !important;
+    box-sizing: border-box;
+  }
+
+  .ticket-layout > div:last-child{
+    margin-top: 20px !important;
+    width: 100%;
+  }
+
+  .ticket-layout > div:last-child > div{
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  footer{
+    padding: 40px 30px !important;
+  }
+
+  footer > div:first-child{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+  }
+}
+
+/* ========================= MOBILE ========================= */
+@media (max-width: 480px){
+  .nav-container{
+    padding: 15px;
+  }
+
+  .nav-content ul{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  button{
+    width: 120px;
+    height: 38px;
+    font-size: 14px;
+  }
+
+  .card{
+    width: 100%;
+    max-width: 100%;
+    padding: 25px 15px;
+    border-radius: 8px;
+  }
+
+  .card h4{
+    font-size: 18px !important;
+  }
+
+  .card p{
+    font-size: 32px !important;
+  }
+
+  .card-container{
+    padding: 0 15px;
+  }
+
+  .ticket-layout{
+    padding: 0 15px;
+  }
+
+  .ticket-layout > div:first-child h5{
+    font-size: 18px !important;
+    margin-top: 30px !important;
+  }
+
+  footer{
+    padding: 40px 20px !important;
+  }
+
+  footer > div:first-child{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  footer > div:first-child > div{
+    max-width: 100% !important;
+  }
+}
+
+/* ========================= VERY SMALL MOBILE ========================= */
+@media (max-width: 360px){
+  .nav-content ul{
+    gap: 8px;
+  }
+
+  .ticket-layout > div:first-child > div{
+    padding: 12px !important;
+  }
+
+  footer{
+    padding: 30px 15px !important;
+  }
+}
