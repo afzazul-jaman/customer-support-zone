@@ -1,5 +1,5 @@
 import './App.css'
-
+import { Twitter, Linkedin, Facebook, Mail } from 'lucide-react';
 function App() {
     console.log("hello world");
   return (
@@ -22,290 +22,192 @@ function App() {
           </div>
       </div>
 
-
       <div className='card-container'>
           <div className=' card in-progress'>
             <h4 style={{fontSize:'24px'}}>In-Progress</h4>
              <p  style={{fontSize:'60px'}}>0</p>
           </div>
-
           <div className='card Resolved'>
              <h4 style={{fontSize:'24px'}}>Resolved</h4>
               <p style={{fontSize:'60px'}}>0</p>
           </div>
       </div>
 
-   <div className="ticket-layout"  style={{ display: "flex", gap: "30px", marginLeft: "50px" , justifyContent:"space-around" , alignItems:"center"}}>
-  {/* LEFT SIDE */}
-  <div>
-    <h5 style={{ fontSize: "24px", marginLeft: "70px", marginTop: "80px" }}>
-      Customer Tickets
-    </h5>
+      <div className="ticket-layout">
+        {/* LEFT SIDE */}
+        <div className="ticket-left">
+          <h5 className="ticket-heading">Customer Tickets</h5>
 
-    {/* CARD 1 */}
-    <div
-      style={{
-        width: "513px",
-        marginLeft: "70px",
-        backgroundColor: "#f8f9fb",
-        borderRadius: "8px",
-        padding: "15px",
-        border: "1px solid #e5e5e5",
-        marginBottom: "20px",
-      }}
-    >
-      <div style={{ display: "flex", justifyContent: "space-between" }}>
-        <h6 style={{ fontSize: "16px", margin: 0 }}>
-          Login Issues - Can't Access Account
-        </h6>
+          <div className="ticket-grid">
 
-        <span
-          style={{
-            backgroundColor: "#d1f7dc",
-            color: "#1a7f37",
-            padding: "4px 10px",
-            borderRadius: "20px",
-            fontSize: "12px",
-            fontWeight: "bold",
-          }}
-        >
-          ● Open
-        </span>
-      </div>
+            {/* CARD 1 */}
+            <div className="ticket-card">
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
+                <h6 style={{ fontSize: "16px", margin: 0 }}>Login Issues - Can't Access Account</h6>
+                <span className="badge badge-open">● Open</span>
+              </div>
+              <p style={{ fontSize: "13px", color: "#666", marginTop: "8px" }}>
+                Customer is unable to log in to their account. They've tried resetting their password multiple times but still...
+              </p>
+              <div style={{ display: "flex", justifyContent: "space-between", fontSize: "12px", marginTop: "10px" }}>
+                <div>
+                  <span>#1001</span>
+                  <span style={{ color: "red", fontWeight: "bold", marginLeft: "10px" }}>HIGH PRIORITY</span>
+                </div>
+                <div>
+                  <span style={{ marginRight: "10px" }}>John Smith</span>
+                  <span>📅 1/15/2024</span>
+                </div>
+              </div>
+            </div>
 
-      <p style={{ fontSize: "13px", color: "#666", marginTop: "8px" }}>
-        Customer is unable to log in to their account. They've tried resetting
-        their password multiple times but still...
-      </p>
+            {/* CARD 2 */}
+            <div className="ticket-card">
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
+                <h6 style={{ fontSize: "16px", margin: 0 }}>Unable to Download Invoice</h6>
+                <span className="badge badge-inprogress">● In-Progress</span>
+              </div>
+              <p style={{ fontSize: "13px", color: "#666", marginTop: "8px" }}>
+                Customer cannot download their January billing section. The download button is not working.
+              </p>
+              <div style={{ display: "flex", justifyContent: "space-between", fontSize: "12px", marginTop: "10px" }}>
+                <div>
+                  <span>#1003</span>
+                  <span style={{ color: "#f0ad4e", fontWeight: "bold", marginLeft: "10px" }}>MEDIUM PRIORITY</span>
+                </div>
+                <div>
+                  <span style={{ marginRight: "10px" }}>Michael Brown</span>
+                  <span>📅 1/17/2024</span>
+                </div>
+              </div>
+            </div>
 
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          fontSize: "12px",
-          marginTop: "10px",
-        }}
-      >
-        <div>
-          <span>#1001</span>
+            {/* CARD 3 */}
+            <div className="ticket-card">
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
+                <h6 style={{ fontSize: "16px", margin: 0 }}>Payment Failed - Card Declined</h6>
+                <span className="badge badge-open">● Open</span>
+              </div>
+              <p style={{ fontSize: "13px", color: "#666", marginTop: "8px" }}>
+                Customer attempted to pay using Visa ending 1234 but the payment keeps failing despite sufficient balance.
+              </p>
+              <div style={{ display: "flex", justifyContent: "space-between", fontSize: "12px", marginTop: "10px" }}>
+                <div>
+                  <span>#1002</span>
+                  <span style={{ color: "red", fontWeight: "bold", marginLeft: "10px" }}>HIGH PRIORITY</span>
+                </div>
+                <div>
+                  <span style={{ marginRight: "10px" }}>Sarah Johnson</span>
+                  <span>📅 1/16/2024</span>
+                </div>
+              </div>
+            </div>
 
-          <span style={{ color: "red", fontWeight: "bold", marginLeft: "10px" }}>
-            HIGH PRIORITY
-          </span>
+            {/* CARD 4 */}
+            <div className="ticket-card">
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
+                <h6 style={{ fontSize: "16px", margin: 0 }}>Incorrect Billing Address</h6>
+                <span className="badge badge-open">● Open</span>
+              </div>
+              <p style={{ fontSize: "13px", color: "#666", marginTop: "8px" }}>
+                Customer's billing address shows a different city. They updated it but it still displays the old one.
+              </p>
+              <div style={{ display: "flex", justifyContent: "space-between", fontSize: "12px", marginTop: "10px" }}>
+                <div>
+                  <span>#1004</span>
+                  <span style={{ color: "#28a745", fontWeight: "bold", marginLeft: "10px" }}>LOW PRIORITY</span>
+                </div>
+                <div>
+                  <span style={{ marginRight: "10px" }}>Emily Davis</span>
+                  <span>📅 1/18/2024</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
 
-        <div>
-          <span style={{ marginRight: "10px" }}>John Smith</span>
-          <span>📅 1/15/2024</span>
+        {/* RIGHT SIDE */}
+        <div className="ticket-right">
+          <h5 style={{ fontSize: "20px" }}>Task Status</h5>
+
+          <div className="task-card">
+            <p style={{ margin: 0, fontSize: "14px" }}>Payment Failed - Card Declined</p>
+            <button className="btn-complete">Complete</button>
+          </div>
+
+          <div className="task-card">
+            <p style={{ margin: 0, fontSize: "14px" }}>Incorrect Billing Address</p>
+            <button className="btn-complete">Complete</button>
+          </div>
+
+          <h5 style={{ marginTop: "20px", fontSize: "18px" }}>Resolved Task</h5>
+          <p style={{ fontSize: "13px", color: "#777" }}>No resolved tasks yet.</p>
         </div>
       </div>
-    </div>
 
-    {/* CARD 2 */}
-    <div
-      style={{
-        width: "513px",
-        marginLeft: "70px",
-        backgroundColor: "#f8f9fb",
-        borderRadius: "8px",
-        padding: "15px",
-        border: "1px solid #e5e5e5",
-      }}
-    >
-      <div style={{ display: "flex", justifyContent: "space-between" }}>
-        <h6 style={{ fontSize: "16px", margin: 0 }}>
-          Unable to Download Invoice
-        </h6>
+      <footer style={{ background: "#000", color: "#ccc", padding: "60px 80px", marginTop: "80px" }}>
+        <div style={{ display: "flex", justifyContent: "space-between", flexWrap: "wrap" }}>
+          <div style={{maxWidth:"260px"}}>
+            <h3 style={{color:"#fff"}}>CS — Ticket System</h3>
+            <p style={{fontSize:"13px", lineHeight:"1.6"}}>
+             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            </p>
+          </div>
+          <div>
+            <h4 style={{color:"#fff"}}>Company</h4>
+            <p><a href="#">About Us</a></p>
+            <p><a href="#">Our Mission</a></p>
+            <p><a href="#">Contact Sales</a></p>
+          </div>
+          <div>
+            <h4 style={{color:"#fff"}}>Services</h4>
+            <p><a href="#">Products & Services</a></p>
+            <p><a href="#">Customer Stories</a></p>
+            <p><a href="#">Download Apps</a></p>
+          </div>
+          <div>
+            <h4 style={{color:"#fff"}}>Information</h4>
+            <p><a href="#">Privacy Policy</a></p>
+            <p><a href="#">Terms & Conditions</a></p>
+            <p><a href="#">Join Us</a></p>
+          </div>
+          <div>
+           <h4 style={{color:"#fff"}}>Social Links</h4>
 
-        <span
-          style={{
-            backgroundColor: "#fff3cd",
-            color: "#856404",
-            padding: "4px 10px",
-            borderRadius: "20px",
-            fontSize: "12px",
-            fontWeight: "bold",
-          }}
-        >
-          ● In-Progress
-        </span>
-      </div>
+<a href="#" style={{ display:"flex", alignItems:"center", gap:"10px", marginBottom:"12px", textDecoration:"none", color:"#ccc" }}>
+  <span style={{ width:"20px", height:"20px", borderRadius:"50%", backgroundColor:"#fff", display:"flex", alignItems:"center", justifyContent:"center" }}>
+    <Twitter size={16} color="#000" />
+  </span>
+  @CS — Ticket System
+</a>
 
-      <p style={{ fontSize: "13px", color: "#666", marginTop: "8px" }}>
-        Customer cannot download their January billing section. The download
-        button is not working.
-      </p>
+<a href="#" style={{ display:"flex", alignItems:"center", gap:"10px", marginBottom:"12px", textDecoration:"none", color:"#ccc" }}>
+  <span style={{ width:"20px", height:"20px", borderRadius:"50%", backgroundColor:"#fff", display:"flex", alignItems:"center", justifyContent:"center" }}>
+    <Linkedin size={16} color="#000" />
+  </span>
+  @CS — Ticket System
+</a>
 
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          fontSize: "12px",
-          marginTop: "10px",
-        }}
-      >
-        <div>
-          <span>#1003</span>
+<a href="#" style={{ display:"flex", alignItems:"center", gap:"10px", marginBottom:"12px", textDecoration:"none", color:"#ccc" }}>
+  <span style={{ width:"20px", height:"20px", borderRadius:"50%", backgroundColor:"#fff", display:"flex", alignItems:"center", justifyContent:"center" }}>
+    <Facebook size={16} color="#000" />
+  </span>
+  @CS — Ticket System
+</a>
 
-          <span
-            style={{ color: "#f0ad4e", fontWeight: "bold", marginLeft: "10px" }}
-          >
-            MEDIUM PRIORITY
-          </span>
+<a href="mailto:support@cst.com" style={{ display:"flex", alignItems:"center", gap:"10px", textDecoration:"none", color:"#ccc" }}>
+  <span style={{ width:"20px", height:"20px", borderRadius:"50%", backgroundColor:"#fff", display:"flex", alignItems:"center", justifyContent:"center" }}>
+    <Mail size={16} color="#000" />
+  </span>
+  support@cst.com
+</a>
+          </div>
         </div>
-
-        <div>
-          <span style={{ marginRight: "10px" }}>Michael Brown</span>
-          <span>📅 1/17/2024</span>
+        <div style={{ borderTop: "1px solid #222", marginTop: "40px", paddingTop: "20px", textAlign: "center", fontSize: "13px" }}>
+          © 2025 CS — Ticket System. All rights reserved.
         </div>
-      </div>
-    </div>
-  </div>
-
-  {/* RIGHT SIDE */}
-  <div style={{ marginTop: "80px" }}>
-    <h5 style={{ fontSize: "20px" }}>Task Status</h5>
-
-    {/* TASK 1 */}
-    <div
-      style={{
-        background: "#f8f9fb",
-        padding: "15px",
-        borderRadius: "8px",
-        border: "1px solid #e5e5e5",
-        width: "250px",
-        marginBottom: "15px",
-      }}
-    >
-      <p style={{ margin: 0, fontSize: "14px" }}>
-        Payment Failed - Card Declined
-      </p>
-
-      <button
-        style={{
-          width: "100%",
-          marginTop: "10px",
-          padding: "8px",
-          background: "#28a745",
-          border: "none",
-          color: "white",
-          borderRadius: "4px",
-        }}
-      >
-        Complete
-      </button>
-    </div>
-
-    {/* TASK 2 */}
-    <div
-      style={{
-        background: "#f8f9fb",
-        padding: "15px",
-        borderRadius: "8px",
-        border: "1px solid #e5e5e5",
-        width: "250px",
-      }}
-    >
-      <p style={{ margin: 0, fontSize: "14px" }}>Incorrect Billing Address</p>
-
-      <button
-        style={{
-          width: "100%",
-          marginTop: "10px",
-          padding: "8px",
-          background: "#28a745",
-          border: "none",
-          color: "white",
-          borderRadius: "4px",
-        }}
-      >
-        Complete
-      </button>
-    </div>
-
-    {/* RESOLVED TASK */}
-    <h5 style={{ marginTop: "20px", fontSize: "18px" }}>Resolved Task</h5>
-
-    <p style={{ fontSize: "13px", color: "#777" }}>
-      No resolved tasks yet.
-    </p>
-  </div>
-</div>
-
-
-<footer
-  style={{
-    background: "#000",
-    color: "#ccc",
-    padding: "60px 80px",
-    marginTop: "80px"
-  }}
->
-  <div
-    style={{
-      display: "flex",
-      justifyContent: "space-between",
-      flexWrap: "wrap"
-    }}
-  >
-
-    {/* Column 1 */}
-    <div style={{maxWidth:"260px"}}>
-      <h3 style={{color:"#fff"}}>CS — Ticket System</h3>
-
-      <p style={{fontSize:"13px", lineHeight:"1.6"}}>
-       Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-      </p>
-    </div>
-
-    {/* Column 2 */}
-    <div>
-      <h4 style={{color:"#fff"}}>Company</h4>
-      <p><a href="#">About Us</a></p>
-      <p><a href="#">Our Mission</a></p>
-      <p><a href="#">Contact Sales</a></p>
-    </div>
-
-    {/* Column 3 */}
-    <div>
-      <h4 style={{color:"#fff"}}>Services</h4>
-      <p><a href="#">Products & Services</a></p>
-      <p><a href="#">Customer Stories</a></p>
-      <p><a href="#">Download Apps</a></p>
-    </div>
-
-    {/* Column 4 */}
-    <div>
-      <h4 style={{color:"#fff"}}>Information</h4>
-      <p><a href="#">Privacy Policy</a></p>
-      <p><a href="#">Terms & Conditions</a></p>
-      <p><a href="#">Join Us</a></p>
-    </div>
-
-    {/* Column 5 */}
-    <div>
-      <h4 style={{color:"#fff"}}>Social Links</h4>
-      <p><a href="#">🌐 @CS — Ticket System</a></p>
-      <p><a href="#">📘 @CS — Ticket System</a></p>
-      <p><a href="#">📸 @CS — Ticket System</a></p>
-      <p><a href="mailto:support@cst.com">✉ support@cst.com</a></p>
-    </div>
-
-  </div>
-
-  {/* Bottom Line */}
-  <div
-    style={{
-      borderTop: "1px solid #222",
-      marginTop: "40px",
-      paddingTop: "20px",
-      textAlign: "center",
-      fontSize: "13px"
-    }}
-  >
-    © 2025 CS — Ticket System. All rights reserved.
-  </div>
-</footer>
+      </footer>
     </>
   )
 }

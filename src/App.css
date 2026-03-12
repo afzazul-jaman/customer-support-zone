@@ -136,10 +136,78 @@ footer a:hover{
 /* ========================= TICKET LAYOUT ========================= */
 .ticket-layout{
   display: flex;
-  gap: 30px;
-  margin-left: 50px;
-  justify-content: space-around;
-  align-items: center;
+  gap: 40px;
+  padding: 40px 50px;
+  align-items: flex-start;
+}
+
+.ticket-left{
+  flex: 1;
+}
+
+.ticket-heading{
+  font-size: 24px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+/* 2-COLUMN GRID — auto fills columns as cards are added */
+.ticket-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.ticket-card{
+  background-color: #f8f9fb;
+  border-radius: 8px;
+  padding: 15px;
+  border: 1px solid #e5e5e5;
+  box-sizing: border-box;
+}
+
+.badge{
+  white-space: nowrap;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 8px;
+}
+
+.badge-open{
+  background-color: #d1f7dc;
+  color: #1a7f37;
+}
+
+.badge-inprogress{
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.ticket-right{
+  width: 280px;
+  flex-shrink: 0;
+  margin-top: 40px;
+}
+
+.task-card{
+  background: #f8f9fb;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #e5e5e5;
+  margin-bottom: 15px;
+}
+
+.btn-complete{
+  width: 100% !important;
+  margin-top: 10px;
+  padding: 8px;
+  background: #28a745 !important;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  height: auto !important;
 }
 
 /* ========================= FOOTER ========================= */
@@ -171,175 +239,41 @@ footer > div:first-child > div{
 
 /* ========================= TABLET LANDSCAPE ========================= */
 @media (max-width: 1024px){
-  .nav-container{
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .nav-content{
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .nav-content ul{
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .card-container{
-    flex-direction: column;
-  }
-
-  .card{
-    width: 90%;
-    max-width: 90%;
-  }
-
-  .ticket-layout{
-    flex-direction: column;
-    margin-left: 0 !important;
-    padding: 0 30px;
-    align-items: stretch;
-    box-sizing: border-box;
-  }
-
-  .ticket-layout > div:first-child h5{
-    margin-left: 0 !important;
-    margin-top: 40px !important;
-  }
-
-  .ticket-layout > div:first-child > div{
-    width: 100% !important;
-    margin-left: 0 !important;
-    box-sizing: border-box;
-  }
-
-  .ticket-layout > div:last-child{
-    margin-top: 20px !important;
-    width: 100%;
-  }
-
-  .ticket-layout > div:last-child > div{
-    width: 100% !important;
-    box-sizing: border-box;
-  }
+  .nav-container{ flex-direction: column; gap: 10px; }
+  .nav-content{ flex-direction: column; gap: 10px; }
+  .nav-content ul{ flex-wrap: wrap; justify-content: center; }
+  .card-container{ flex-direction: column; }
+  .card{ width: 90%; max-width: 90%; }
+  .ticket-layout{ flex-direction: column; padding: 20px 30px; }
+  .ticket-right{ width: 100%; }
+  .ticket-heading{ margin-top: 20px; }
+  .ticket-grid{ grid-template-columns: repeat(2, 1fr); }
 }
 
 /* ========================= SMALL TABLET ========================= */
 @media (max-width: 768px){
-  .card-container{
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .card{
-    width: 95%;
-    max-width: 95%;
-    height: auto;
-    padding: 30px 20px;
-  }
-
-  .card h4{
-    font-size: 20px !important;
-  }
-
-  .card p{
-    font-size: 40px !important;
-  }
-
-  .ticket-layout{
-    flex-direction: column;
-    margin-left: 0 !important;
-    padding: 0 20px;
-    align-items: stretch;
-    box-sizing: border-box;
-  }
-
-  .ticket-layout > div:first-child h5{
-    margin-left: 0 !important;
-    margin-top: 40px !important;
-    font-size: 20px !important;
-  }
-
-  .ticket-layout > div:first-child > div{
-    width: 100% !important;
-    margin-left: 0 !important;
-    box-sizing: border-box;
-  }
-
-  .ticket-layout > div:last-child{
-    margin-top: 20px !important;
-    width: 100%;
-  }
-
-  .ticket-layout > div:last-child > div{
-    width: 100% !important;
-    box-sizing: border-box;
-  }
-
-  footer{
-    padding: 40px 30px !important;
-  }
-
-  footer > div:first-child{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-  }
+  .card{ width: 95%; max-width: 95%; height: auto; padding: 30px 20px; }
+  .card h4{ font-size: 20px !important; }
+  .card p{ font-size: 40px !important; }
+  .ticket-layout{ padding: 20px; }
+  .ticket-grid{ grid-template-columns: repeat(2, 1fr); }
+  footer{ padding: 40px 30px !important; }
+  footer > div:first-child{ display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
 }
 
 /* ========================= MOBILE ========================= */
 @media (max-width: 480px){
-  .nav-container{
-    padding: 15px;
-  }
-
-  .nav-content ul{
-    flex-direction: column;
-    align-items: center;
-  }
-
-  button{
-    width: 120px;
-    height: 38px;
-    font-size: 14px;
-  }
-
-  .card{
-    width: 100%;
-    max-width: 100%;
-    padding: 25px 15px;
-    border-radius: 8px;
-  }
-
-  .card h4{
-    font-size: 18px !important;
-  }
-
-  .card p{
-    font-size: 32px !important;
-  }
-
-  .card-container{
-    padding: 0 15px;
-  }
-
-  .ticket-layout{
-    padding: 0 15px;
-  }
-
-  .ticket-layout > div:first-child h5{
-    font-size: 18px !important;
-    margin-top: 30px !important;
-  }
-
-  footer{
-    padding: 40px 20px !important;
-  }
-
-  footer > div:first-child{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+  .nav-container{ padding: 15px; }
+  .nav-content ul{ flex-direction: column; align-items: center; }
+  button{ width: 120px; height: 38px; font-size: 14px; }
+  .card{ width: 100%; max-width: 100%; padding: 25px 15px; }
+  .card h4{ font-size: 18px !important; }
+  .card p{ font-size: 32px !important; }
+  .card-container{ padding: 0 15px; }
+  .ticket-layout{ padding: 0 15px; }
+  .ticket-grid{ grid-template-columns: 1fr; }
+  footer{ padding: 40px 20px !important; }
+  footer > div:first-child{ display: grid; grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
 
