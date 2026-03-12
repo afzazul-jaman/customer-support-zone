@@ -1,0 +1,120 @@
+body{
+  margin:0;
+  padding:0;
+  background-color: aliceblue;
+}
+button{
+   background: linear-gradient(135deg,#632EE3,#9F62F2);
+   width: 145px;
+   height: 43px;
+   border-radius: 2px;
+   border: none;
+   color: white;
+   cursor: pointer;
+}
+.nav-container{
+   display:flex;
+   justify-content:space-between;
+   align-items:center;
+   background-color:rgb(255, 255, 255);
+   padding:10px 20px;
+   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.nav-content{
+   display:flex;
+   align-items:center;
+   gap:20px;
+}
+
+.nav-content ul{
+   display:flex;
+   list-style:none;
+   gap:15px;
+   margin:0;
+   padding:0;
+}
+.card-container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 50px;
+   gap: 20px;
+}
+.card{
+  width: 708px;
+  height: 250px;
+  padding: 40px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  color: white;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.in-progress{
+  background:
+  url("./assets/bg-vector.png"),
+  linear-gradient(135deg,#632EE3,#9F62F2);
+}
+
+/* Resolved Color */
+.Resolved{
+  background:
+  url("./assets/bg-vector.png"),
+  linear-gradient(135deg,#54CF68,#00827A);
+}
+
+/* LEFT VECTOR */
+.card::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: url("./assets/vector1.png") no-repeat left center;
+  background-size: contain;
+  opacity: 0.3;
+}
+
+/* RIGHT VECTOR (flipped) */
+.card::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background: url("./assets/vector1.png") no-repeat right center;
+  background-size: contain;
+  transform: scaleX(-1);   /* vector flip করবে */
+  opacity: 0.3;
+}
+/* text always top */
+.card h4,
+.card p{
+  position: relative;
+  z-index: 2;
+}
+
+.card p{
+  font-size: 48px;
+}
+ 
+.tickets-cards{
+   background-color: aqua;
+}
+.ticket-txt1{
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+.ticket-text2{
+    display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
