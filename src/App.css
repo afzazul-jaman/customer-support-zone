@@ -20,33 +20,49 @@ button{
    justify-content:space-between;
    align-items:center;
    background-color:rgb(255, 255, 255);
-   padding:10px 20px;
-   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+   padding:14px 32px;
+   box-shadow: 0 2px 16px rgba(99,46,227,0.08);
+   position: sticky;
+   top: 0;
+   z-index: 100;
+}
+
+.nav-container h3{
+  background: linear-gradient(135deg,#632EE3,#9F62F2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+  letter-spacing: -0.5px;
 }
 
 .nav-content{
    display:flex;
    align-items:center;
-   gap:20px;
+   gap:32px;
 }
 
 .nav-content ul{
    display:flex;
    list-style:none;
-   gap:15px;
+   gap:4px;
    margin:0;
    padding:0;
 }
 
 .nav-content ul li a{
   text-decoration: none;
-  color: #333;
+  color: #555;
   font-size: 14px;
-  transition: color 0.2s;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: all 0.2s;
 }
 
 .nav-content ul li a:hover{
   color: #632EE3;
+  background-color: #f3eeff;
 }
 
 footer a{
@@ -239,9 +255,9 @@ footer > div:first-child > div{
 
 /* ========================= TABLET LANDSCAPE ========================= */
 @media (max-width: 1024px){
-  .nav-container{ flex-direction: column; gap: 10px; }
-  .nav-content{ flex-direction: column; gap: 10px; }
-  .nav-content ul{ flex-wrap: wrap; justify-content: center; }
+  .nav-container{ flex-direction: column; gap: 12px; padding: 16px 24px; }
+  .nav-content{ flex-direction: column; gap: 12px; }
+  .nav-content ul{ flex-wrap: wrap; justify-content: center; gap: 4px; }
   .card-container{ flex-direction: column; }
   .card{ width: 90%; max-width: 90%; }
   .ticket-layout{ flex-direction: column; padding: 20px 30px; }
@@ -263,8 +279,10 @@ footer > div:first-child > div{
 
 /* ========================= MOBILE ========================= */
 @media (max-width: 480px){
-  .nav-container{ padding: 15px; }
-  .nav-content ul{ flex-direction: column; align-items: center; }
+  .nav-container{ padding: 14px 16px; gap: 10px; }
+  .nav-content{ width: 100%; justify-content: center; }
+  .nav-content ul{ flex-wrap: wrap; justify-content: center; gap: 2px; }
+  .nav-content ul li a{ font-size: 13px; padding: 5px 9px; }
   button{ width: 120px; height: 38px; font-size: 14px; }
   .card{ width: 100%; max-width: 100%; padding: 25px 15px; }
   .card h4{ font-size: 18px !important; }

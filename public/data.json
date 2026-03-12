@@ -1,0 +1,98 @@
+[
+  {
+    "ticket_id": "#1002",
+    "customer_name": "Sarah Jenkins",
+    "date": "2026-02-10",
+    "priority": "CRITICAL",
+    "status": "Open",
+    "issue_description": "2FA code not received via SMS or Email; user completely locked out."
+  },
+  {
+    "ticket_id": "#1003",
+    "customer_name": "Michael Ross",
+    "date": "2026-02-12",
+    "priority": "HIGH",
+    "status": "Pending",
+    "issue_description": "Password reset link expires instantly after clicking (Token mismatch)."
+  },
+  {
+    "ticket_id": "#1004",
+    "customer_name": "Anika Rahman",
+    "date": "2026-02-15",
+    "priority": "Medium",
+    "status": "Resolved",
+    "issue_description": "Account locked after 3 failed biometric/FaceID attempts."
+  },
+  {
+    "ticket_id": "#1005",
+    "customer_name": "David Miller",
+    "date": "2026-02-18",
+    "priority": "HIGH",
+    "status": "Open",
+    "issue_description": "System showing 'User not found' error despite active subscription status."
+  },
+  {
+    "ticket_id": "#1006",
+    "customer_name": "Elena Gilbert",
+    "date": "2026-02-22",
+    "priority": "Low",
+    "status": "Closed",
+    "issue_description": "User requested clarification on new session timeout policy (2026 Update)."
+  },
+  {
+    "ticket_id": "#1007",
+    "customer_name": "Robert Vance",
+    "date": "2026-02-25",
+    "priority": "CRITICAL",
+    "status": "In Progress",
+    "issue_description": "Potential account takeover; unauthorized login detected from unrecognized IP."
+  },
+  {
+    "ticket_id": "#1008",
+    "customer_name": "Tanvir Ahmed",
+    "date": "2026-03-01",
+    "priority": "Medium",
+    "status": "Open",
+    "issue_description": "Social login (Google/Apple ID) stuck on a blank white screen during auth."
+  },
+  {
+    "ticket_id": "#1009",
+    "customer_name": "Linda Zhao",
+    "date": "2026-03-03",
+    "priority": "HIGH",
+    "status": "Pending",
+    "issue_description": "Database sync error; user dashboard fails to load post-login."
+  },
+  {
+    "ticket_id": "#1010",
+    "customer_name": "Kevin Hart",
+    "date": "2026-03-05",
+    "priority": "Low",
+    "status": "Resolved",
+    "issue_description": "Username recovery requested via secondary email verification."
+  },
+  {
+    "ticket_id": "#1011",
+    "customer_name": "Sophia Loren",
+    "date": "2026-03-08",
+    "priority": "HIGH",
+    "status": "Open",
+    "issue_description": "Mobile app crashes immediately after entering valid login credentials."
+  },
+  {
+    "ticket_id": "#1012",
+    "customer_name": "James Bond",
+    "date": "2026-03-10",
+    "priority": "Medium",
+    "status": "In Progress",
+    "issue_description": "VPN/Proxy users being incorrectly flagged and blocked by the login firewall."
+  },
+  {
+    "ticket_id": "#1013",
+    "customer_name": "Maria Garcia",
+    "date": "2026-03-12",
+    "priority": "CRITICAL",
+    "status": "Open",
+    "issue_description": "Corporate SSO integration (Okta) failing for the entire department."
+  }
+]

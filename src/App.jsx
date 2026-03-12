@@ -1,13 +1,13 @@
 import './App.css'
 import { Twitter, Linkedin, Facebook, Mail } from 'lucide-react';
 function App() {
-    console.log("hello world");
+   
   return (
     
     <> 
       <div className='nav-container'>
           <div>
-              <h3 style={{ color:"130B2D" ,fontSize:'24px'}}>CS — Ticket System</h3>
+              <h2 style={{ fontSize:'24px'}}>CS — Ticket System</h2>
           </div>
           <div className='nav-content'>
              <ul>
