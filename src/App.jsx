@@ -1,7 +1,6 @@
 import { useState, Suspense } from 'react'
 import './App.css'
 import Navbar from './components/Navbar'
-import Progress from './components/Progress'
 import Ticketscard from './components/Ticketscard'
 import Footer from './components/Footer'
 
@@ -17,7 +16,6 @@ function App() {
   return (
     <>
       <Navbar />
-     
       <Suspense fallback={<p>Loading...</p>}>
         <Ticketscard userPromise={userPromise} />
       </Suspense>
