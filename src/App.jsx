@@ -6,7 +6,6 @@ import Ticketscard from './components/Ticketscard'
 import Footer from './components/Footer'
 import { Suspense } from 'react';
 
-
 const fetchData = async () => {
   const res = await fetch('/data.json')
   return res.json()

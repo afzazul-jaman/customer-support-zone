@@ -3,58 +3,37 @@ import '../App.css'
 
 function Ticketscard({userPromise}) {
   const userPromiseData = use(userPromise)
-  console.log(userPromiseData.customer_name);
+  console.log(userPromiseData);
+  
   return (
     <div className="ticket-layout">
-
+     
       {/* LEFT SIDE */}
       <div className="ticket-left">
         <h5 className="ticket-heading">Customer Tickets</h5>
 
         <div className="ticket-grid">
-
-          {/* CARD 1 */}
-          <div className="ticket-card">
-            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
-              <h6 style={{ fontSize: "16px", margin: 0 }}>Login Issues - Can't Access Account</h6>
-              <span className="badge badge-open">● Open</span>
-            </div>
-            <p style={{ fontSize: "13px", color: "#666", marginTop: "8px" }}>
-              Customer is unable to log in to their account. They've tried resetting their password multiple times but still...
-            </p>
-            <div style={{ display: "flex", justifyContent: "space-between", fontSize: "12px", marginTop: "10px" }}>
-              <div>
-                <span>#1001</span>
-                <span style={{ color: "red", fontWeight: "bold", marginLeft: "10px" }}>HIGH PRIORITY</span>
+          {userPromiseData.map((tickets) => (
+            <div key={tickets.ticket_id} className="ticket-card">
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
+                <h6 style={{ fontSize: "16px", margin: 0 }}>{tickets.title}</h6>
+                <span className="badge badge-open">● {tickets.status}</span>
               </div>
-              <div>
-                <span style={{ marginRight: "10px" }}>John Smith</span>
-                <span>📅 1/15/2024</span>
-              </div>
-            </div>
-          </div>
-
-          {/* CARD 2 */}
-          <div className="ticket-card">
-            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
-              <h6 style={{ fontSize: "16px", margin: 0 }}>Unable to Download Invoice</h6>
-              <span className="badge badge-inprogress">● In-Progress</span>
-            </div>
-            <p style={{ fontSize: "13px", color: "#666", marginTop: "8px" }}>
-              Customer cannot download their January billing section. The download button is not working.
-            </p>
-            <div style={{ display: "flex", justifyContent: "space-between", fontSize: "12px", marginTop: "10px" }}>
-              <div>
-                <span>#1003</span>
-                <span style={{ color: "#f0ad4e", fontWeight: "bold", marginLeft: "10px" }}>MEDIUM PRIORITY</span>
-              </div>
-              <div>
-                <span style={{ marginRight: "10px" }}>Michael Brown</span>
-                <span>📅 1/17/2024</span>
+              <p style={{ fontSize: "13px", color: "#666", marginTop: "8px" }}>
+                {tickets.description}
+              </p>
+              <div style={{ display: "flex", justifyContent: "space-between", fontSize: "12px", marginTop: "10px" }}>
+                <div>
+                  <span>{tickets.ticket_id}</span>
+                  <span style={{ color: "red", fontWeight: "bold", marginLeft: "10px" }}>{tickets.priority}</span>
+                </div>
+                <div>
+                  <span style={{ marginRight: "10px" }}>{tickets.customer_name}</span>
+                  <span>📅 {tickets.date}</span>
+                </div>
               </div>
             </div>
-          </div>
-
+          ))}
         </div>
       </div>
 
